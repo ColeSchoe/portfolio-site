@@ -10,7 +10,7 @@
 <template>
     <div class="container">
         <h1>Hi! I'm Cole Schoenbauer, a software developer.</h1>
-        <button @click="scrollToElement('about-section')">More About Me</button>
+        <button @click="scrollToElement('about-section')">More About Me<img src="../assets/arrow_downward.svg"></button>
     </div>
 </template>
 
@@ -34,11 +34,19 @@
         color: var(--color-text);
         padding: .5rem 1.5rem;
         border-radius: 20px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     button:hover {
         color: var(--color-text-dark);
         transition-duration: 500ms;
         cursor: pointer;
+    }
+
+    button:active {
+        border: 1px solid white;
     }
 </style>
