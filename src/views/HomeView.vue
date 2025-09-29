@@ -23,5 +23,6 @@ import Header from '@/components/Header.vue';
   top: 0;
   width: 100%;
   position: sticky;
+  z-index: 10;
 }
 </style>

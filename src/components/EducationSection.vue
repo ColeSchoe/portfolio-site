@@ -12,7 +12,7 @@
 
 <style scoped>
     .container {
-        padding: 15vh 0;
+        padding: 10vh 0;
 
         display: flex;
         flex-direction: column;
@@ -29,10 +29,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    p {
-        max-width: 50%;
     }
 
     h2 {
