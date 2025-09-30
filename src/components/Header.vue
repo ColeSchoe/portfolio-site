@@ -24,7 +24,7 @@
         gap: 3%;
         padding: 3vh 0px;
         padding-right: 10%;
-        background-color: var(--color-background-soft);
+        background-color: var(--color-background-mute);
     }
 
     button {

@@ -27,7 +27,7 @@
     }
 
     button {
-        border: none;
+        border: 1px solid transparent;
 
         font: inherit;
         background-color: var(--color-background-mute);
@@ -48,5 +48,7 @@
 
     button:active {
         border: 1px solid white;
+        background-color: var(--color-background-soft);
+        transition: background-color .2s;
     }
 </style>
