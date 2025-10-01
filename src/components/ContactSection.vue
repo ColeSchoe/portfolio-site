@@ -1,3 +1,18 @@
+<script setup>
+    function download() {
+        const filename = "Cole-Schoenbauer-Resume.pdf";
+        const element = document.createElement('a');
+        element.setAttribute('href', 'data/application/src/assets/Cole-Schoenbauer-9-25.pdf');
+        element.setAttribute('download', filename);
+
+        element.style.display = "none";
+        document.body.appendChild(element);
+
+        element.click();
+        document.body.removeChild(element);
+    }
+</script>
+
 <template>
     <div class="container">
         <h1 class="contact-header">Contact</h1>
@@ -6,9 +21,7 @@
                 <img src="../assets/mail.svg" alt="">
                 <p>coleschoenbauer@gmail.com</p>
             </div>
-            <div class="resume">
-                <button>Download My Resume</button>
-            </div>
+            <a class="resume" href="src\assets\Cole-Schoenbauer-9-2025.pdf" download>Download My Resume</a>
             <div class="web-shortcuts">
                 <a target="_blank" href="https://www.linkedin.com/in/cole-schoenbauer-488963251/"><img src="../assets/LinkedIn_icon.png" alt="Link to my LinkedIn"></a>
                 <a target="_blank" href="https://github.com/ColeSchoe"><img src="../assets/github-icon.png" alt="Link to my GitHub"></a>
@@ -46,7 +59,7 @@
         align-items: center;
     }
 
-    .resume button {
+    .resume {
         border: 1px solid transparent;
 
         font: inherit;
@@ -60,14 +73,14 @@
         gap: 10px;
     }
 
-    .resume button:hover {
-        color: var(--color-text-dark);
+    .resume:hover {
+        color: var(--main-green);
         transition-duration: 500ms;
         cursor: pointer;
     }
 
-    .resume button:active {
-        border: 1px solid white;
+    .resume:active {
+        border: 1px solid var(--main-green);
         background-color: var(--color-background-soft);
         transition: background-color .2s;
     }

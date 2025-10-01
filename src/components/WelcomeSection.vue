@@ -10,7 +10,7 @@
 <template>
     <div class="container">
         <h1>Hi! I'm Cole Schoenbauer, a software developer.</h1>
-        <button @click="scrollToElement('about-section')">More About Me<img src="../assets/arrow_downward.svg"></button>
+        <button @click="scrollToElement('about-section')">More About Me</button>
     </div>
 </template>
 
@@ -41,13 +41,13 @@
     }
 
     button:hover {
-        color: var(--color-text-dark);
+        color: var(--main-green);
         transition-duration: 500ms;
         cursor: pointer;
     }
 
     button:active {
-        border: 1px solid white;
+        border: 1px solid var(--main-green);
         background-color: var(--color-background-soft);
         transition: background-color .2s;
     }

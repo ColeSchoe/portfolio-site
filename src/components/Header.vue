@@ -9,11 +9,11 @@
 
 <template>
     <div class="container">
-        <button @click="scrollToElement('welcome-section')"><h2>Welcome</h2></button>
-        <button @click="scrollToElement('about-section')"><h2>About</h2></button>
-        <button @click="scrollToElement('education-section')"><h2>Education</h2></button>
-        <button @click="scrollToElement('projects-section')"><h2>Projects</h2></button>
-        <button @click="scrollToElement('contact-section')"><h2>Contact</h2></button>
+        <button id="welcome-section-button" @click="scrollToElement('welcome-section')"><h2>Welcome</h2></button>
+        <button id="about-section-button" @click="scrollToElement('about-section')"><h2>About</h2></button>
+        <button id="education-section-button" @click="scrollToElement('education-section')"><h2>Education</h2></button>
+        <button id="projects-section-button" @click="scrollToElement('projects-section')"><h2>Projects</h2></button>
+        <button id="contact-section-button" @click="scrollToElement('contact-section')"><h2>Contact</h2></button>
     </div>
 </template>
 
@@ -32,7 +32,7 @@
     }
 
     button:hover {
-        color: var(--color-text-dark);
+        color: var(--main-green);
         transition-duration: 500ms;
         cursor: pointer;
     }
