@@ -1,18 +1,3 @@
-<script setup>
-    function download() {
-        const filename = "Cole-Schoenbauer-Resume.pdf";
-        const element = document.createElement('a');
-        element.setAttribute('href', 'data/application/src/assets/Cole-Schoenbauer-9-25.pdf');
-        element.setAttribute('download', filename);
-
-        element.style.display = "none";
-        document.body.appendChild(element);
-
-        element.click();
-        document.body.removeChild(element);
-    }
-</script>
-
 <template>
     <div class="container">
         <h1 class="contact-header">Contact</h1>
