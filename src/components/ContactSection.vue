@@ -6,7 +6,7 @@
                 <img src="../assets/mail.svg" alt="">
                 <p>coleschoenbauer@gmail.com</p>
             </div>
-            <a class="resume" href="dist\Cole-Schoenbauer-9-2025.pdf" download>Download My Resume</a>
+            <a class="resume" href="Cole-Schoenbauer-9-2025.pdf" download>Download My Resume</a>
             <div class="web-shortcuts">
                 <a target="_blank" href="https://www.linkedin.com/in/cole-schoenbauer-488963251/"><img src="../assets/LinkedIn_icon.png" alt="Link to my LinkedIn"></a>
                 <a target="_blank" href="https://github.com/ColeSchoe"><img src="../assets/github-icon.png" alt="Link to my GitHub"></a>
