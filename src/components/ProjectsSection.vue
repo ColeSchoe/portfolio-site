@@ -53,7 +53,7 @@
 
 <style scoped>
     .container {
-        padding-top: 15vh;
+        padding-top: 25vh;
 
         display: flex;
         flex-direction: column;
@@ -67,10 +67,10 @@
     }
 
     .project {
-        min-height: 60vh;
+        min-height: 40vh;
         max-height: 100vh;
-        max-width: 80%;
-        padding: 0 2rem;
+        max-width: min(70%, 1280px);
+        padding: 1rem 2rem;
 
         display: flex;
         align-items: center;
@@ -85,7 +85,7 @@
 
     .project img {
         border-radius: 15px;
-        max-width: 540px;
+        max-width: 640px;
         height: auto;
         margin: auto;
     }
