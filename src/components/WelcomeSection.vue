@@ -1,21 +1,48 @@
 <script setup>
-    function scrollToElement(id) {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({behavior: "smooth"});
-        }
+import ParticleEffect from './ParticleEffect.vue';
+
+function scrollToElement(id) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({behavior: "smooth"});
     }
+}
 </script>
 
 <template>
     <div class="container">
-        <h1>Hi! I'm Cole Schoenbauer, a software developer.</h1>
-        <button @click="scrollToElement('about-section')">More About Me</button>
+        <ParticleEffect id="welcome-canvas" :quantity="100"></ParticleEffect>
+        <div id="canvas-overlay">
+            <h1>Hi! I'm Cole Schoenbauer, a software developer.</h1>
+            <button @click="scrollToElement('about-section')">More About Me</button>
+        </div>
     </div>
 </template>
 
 <style scoped>
     .container {
+        height: 100vh;
+        position: relative;
+    }
+
+    #welcome-canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #canvas-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -24,6 +51,7 @@
         gap: 40px;
 
         font-size: 1.4rem;
+        text-align: center;
     }
 
     button {
