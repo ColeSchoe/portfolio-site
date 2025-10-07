@@ -31,7 +31,10 @@
         flex-direction: column;
         align-items: center;
 
-        background-color: var(--color-background-soft);
+         /* Simple gradient - diagonal */
+        background-image: linear-gradient(to top left, var(--color-background-soft), var(--color-background-bright));
+
+        /* background-color: var(--color-background-soft); */
         border-radius: 20px;
         padding: 2rem;
     }

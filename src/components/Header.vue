@@ -24,7 +24,10 @@
         gap: 3%;
         padding: 3vh 0px;
         padding-right: 10%;
-        background-color: var(--color-background-mute);
+        /* background-color: var(--color-background-mute); */
+
+        /* Simple gradient */
+        background-image: linear-gradient(to top, var(--color-background-mute), var(--color-background-bright));
     }
 
     button {

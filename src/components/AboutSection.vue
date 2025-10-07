@@ -114,8 +114,8 @@
         border-radius: 20px;
         padding: 1rem;
 
-        /* Simple gradient - diagonal */
-        /* background-image: linear-gradient(to bottom right, var(--color-background-soft), var(--color-background-mute)); */
+         /* Simple gradient - diagonal */
+        background-image: linear-gradient(to top left, var(--color-background-soft), var(--color-background-bright));
 
         /* Transparency gradient */
         /* background-image: linear-gradient(to right, rgba(34,34,34,0), rgba(34,34,34,1)); */

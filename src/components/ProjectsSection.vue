@@ -66,17 +66,23 @@
         font-style: italic;
     }
 
+    /* --vt-c-black-soft: #222222;
+    --vt-c-black-mute: #282828; */
+
     .project {
         min-height: 40vh;
-        max-height: 100vh;
-        max-width: min(70%, 1280px);
-        padding: 1rem 2rem;
+        max-height: 720px;
+        max-width: min(80%, 1280px);
+        padding: 2rem 2rem;
 
         display: flex;
         align-items: center;
         gap: 2rem;
 
-        background-color: var(--color-background-soft);
+        /* Simple gradient - diagonal */
+        background-image: linear-gradient(to top left, var(--color-background-soft), var(--color-background-bright));
+
+        /* background-color: var(--color-background-soft); */
         border-radius: 20px;
 
         overflow: hidden;
