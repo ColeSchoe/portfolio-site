@@ -71,8 +71,8 @@
 
     .project {
         min-height: 40vh;
-        max-height: 720px;
-        max-width: min(80%, 1280px);
+        max-height: 480px;
+        max-width: min(80%, 1080px);
         padding: 2rem 2rem;
 
         display: flex;
@@ -93,7 +93,6 @@
         border-radius: 15px;
         max-width: 640px;
         height: auto;
-        margin: auto;
     }
 
     .info {
