@@ -8,6 +8,9 @@ const shapes = ref([]);
 const canvasSize = reactive({w: 0, h: 0});
 const dpr = window.devicePixelRatio || 1;
 
+// Moss green, rose quartz
+const colors_rgb = [[138, 154, 91], [175, 154, 178]];
+
 onMounted(() => {
     if (canvasRef.value) {
         context.value = canvasRef.value.getContext('2d');
@@ -51,12 +54,13 @@ const triangleParams = () => {
     const dy = (Math.random() - 0.5) * 0.2;
     const magnetism = 0.1 + Math.random() * 4;
     const rotation = Math.random() * 360;
-    return { x, y, translateX, translateY, size, alpha, targetAlpha, dx, dy, magnetism, rotation };
+    const color = colors_rgb[Math.floor(Math.random() * colors_rgb.length)]; // grabbing a random color from colors_rgb
+    return { x, y, translateX, translateY, size, alpha, targetAlpha, dx, dy, magnetism, rotation, color };
 }
 
 const drawTriangle = (triangle, update = false) => {
     if (context.value) {
-        const {x, y, translateX, translateY, size, alpha, rotation } = triangle;
+        const {x, y, translateX, translateY, size, alpha, rotation, color } = triangle;
 
         // Move triangle
         context.value.translate(translateX, translateY);
@@ -64,7 +68,7 @@ const drawTriangle = (triangle, update = false) => {
         // Drawing triangle
         context.value.beginPath();
 
-        // Using parametric equations of a circle to find x and y
+        // Using parametric equations of a circle to find x and y for each point
         // --  x = r*cos(rotation), y = r*sin(rotation) --
         context.value.moveTo(x + (size * Math.cos(rotation)), y + (size * Math.sin(rotation))); // Top
         context.value.lineTo(x + (size * Math.cos(rotation-90)), y + (size * Math.sin(rotation-90))); // Bottom-left
@@ -73,7 +77,7 @@ const drawTriangle = (triangle, update = false) => {
         context.value.closePath(); // Connect last point to first point, so bottom right to top
 
         // Filling triangle
-        context.value.fillStyle = `rgba(138, 154, 91, ${alpha})`;
+        context.value.fillStyle = `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${alpha})`;
         context.value.fill();
         context.value.setTransform(dpr, 0, 0, dpr, 0, 0);
 
@@ -152,6 +156,7 @@ const animate = () => {
             translateY: shape.translateY,
             alpha: shape.alpha,
             rotation: shape.rotation,
+            color: shape.color,
             },
             true
         )

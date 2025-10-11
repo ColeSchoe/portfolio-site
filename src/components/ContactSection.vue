@@ -17,7 +17,7 @@
 
 <style scoped>
     .container {
-        padding-top: 15vh;
+        padding-top: 25vh;
         height: 100vh;
 
         display: flex;
@@ -66,8 +66,8 @@
 
     .resume:active {
         border: 1px solid var(--main-green);
-        background-color: var(--color-background-soft);
-        transition: background-color .2s;
+        background-image: radial-gradient(circle at center, var(--color-background-brightest), var(--color-background-mute));
+        transition-duration: 50ms;
     }
 
     .web-shortcuts {

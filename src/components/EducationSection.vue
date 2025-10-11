@@ -13,7 +13,7 @@
 
 <style scoped>
     .container {
-        padding-top: 15vh;
+        padding-top: 25vh;
 
         display: flex;
         flex-direction: column;
@@ -31,7 +31,7 @@
         flex-direction: column;
         align-items: center;
 
-         /* Simple gradient - diagonal */
+        /* Simple gradient - diagonal */
         background-image: linear-gradient(to top left, var(--color-background-soft), var(--color-background-bright));
 
         /* background-color: var(--color-background-soft); */

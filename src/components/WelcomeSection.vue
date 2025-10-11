@@ -11,7 +11,7 @@ function scrollToElement(id) {
 
 <template>
     <div class="container">
-        <ParticleEffect id="welcome-canvas" :quantity="100"></ParticleEffect>
+        <ParticleEffect id="welcome-canvas" :quantity="150"></ParticleEffect>
         <div id="canvas-overlay">
             <h1>Hi! I'm Cole Schoenbauer, a software developer.</h1>
             <button @click="scrollToElement('about-section')">More About Me</button>
@@ -76,7 +76,7 @@ function scrollToElement(id) {
 
     button:active {
         border: 1px solid var(--main-green);
-        background-color: var(--color-background-soft);
-        transition: background-color .2s;
+        background-image: radial-gradient(circle at center, var(--color-background-brightest), var(--color-background-mute));
+        transition-duration: 50ms;
     }
 </style>

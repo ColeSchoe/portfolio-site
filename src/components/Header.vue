@@ -21,7 +21,7 @@
     .container {
         display: flex;
         justify-content: end;
-        gap: 3%;
+        gap: 1%;
         padding: 3vh 0px;
         padding-right: 10%;
         /* background-color: var(--color-background-mute); */
@@ -32,11 +32,19 @@
 
     button {
         all: unset;
+        padding: 0 .75rem;
+        border-radius: 15px;
     }
 
     button:hover {
         color: var(--main-green);
         transition-duration: 500ms;
         cursor: pointer;
+    }
+
+    button:active {
+        background-color: var(--color-background-brightest);
+        background-image: radial-gradient(circle at center, var(--color-background-brightest), var(--color-background-mute));
+        transition-duration: 50ms;
     }
 </style>
