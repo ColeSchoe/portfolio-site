@@ -48,6 +48,19 @@
             
             <img src="../assets/budgeting-dashboard.png" alt="Budgeting Webapp Dashboard">
         </div>
+
+        <div class="project">
+            <div class="info">
+                <h2>Presence Detector</h2>
+                <p>A Python program that uses a machine-learned classifier for face detection to put the computer
+                    to sleep when the user is not present. The program uses the webcam on the host device to 
+                    process images periodically for the presence of a user.
+                </p>
+                <a target="_blank" href="https://github.com/ColeSchoe/Presence-Detector">See More</a>
+            </div>
+            
+            <img src="../assets/detector-image.PNG" alt="Face Detection Example Image">
+        </div>
     </div>
 </template>
 
