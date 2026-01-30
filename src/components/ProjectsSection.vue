@@ -61,6 +61,19 @@
             
             <img src="../assets/detector-image.PNG" alt="Face Detection Example Image">
         </div>
+
+        <div class="project">
+            <div class="info">
+                <h2>Spotify Playlist Puller</h2>
+                <p>A JavaScript project that uses a user's generated access token to pull their playlist data from
+                    Spotify. Uses Spotify's web API to extract the JSON-structured data and save it in a .csv file
+                    in playlist, song name, artist, album order.
+                </p>
+                <a target="_blank" href="https://github.com/ColeSchoe/Spotify-Playlist-Puller">See More</a>
+            </div>
+            
+            <img src="../assets/csv-songs.png" alt="Song information presented in a .csv file">
+        </div>
     </div>
 </template>
 
